@@ -6,6 +6,7 @@
   #title {
     display: flex;
     height: 3rem;
+    position: relative;
   }
 
   .repeated {
@@ -20,7 +21,7 @@
   .h1 {
     margin-top: 0;
     margin-bottom: 0;
-    color: $color-text;
+    color: $color-text-header;
     background-color: $color-accent-1;
     letter-spacing: .01em;
     font-weight: 700;

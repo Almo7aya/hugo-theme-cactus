@@ -1,13 +1,18 @@
 $color-background: #1d1f21;
-$color-footer-mobile-1: lighten($color-background, 2%);
+$color-background-footer: darken($color-background, 2%);
+$color-footer-mobile-1: darken($color-background, 5%);
 $color-footer-mobile-2: lighten($color-background, 10%);
 $color-background-code: lighten($color-background, 2%);
-$color-border: #666;
-$color-meta: #666;
-$color-meta-code: #666;
-$color-link: #277385;
-$color-text: #c9cacc;
-$color-accent-3: #cccccc;
+$color-border: #c5b28c;
+
+$color-meta: #808080;
+$color-meta-code: #808080;
+$color-link: #808080;
+
+$color-text: #e5e3dd;
+
+$color-text-header: #171716;
+$color-accent-3: #5c6370;
 $color-accent-2: #eeeeee;
-$color-accent-1: #277385;
+$color-accent-1: #9f7b3d;
 $color-quote: #ccffb6;
