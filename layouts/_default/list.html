@@ -1,13 +1,14 @@
 {{ define "main"}}
 <div id="archive">
   <ul class="post-list">
+    <span class="h2"><a href="{{ .Site.Params.mainSection | absURL }}">### All Posts</a></span>
 
-  {{ $pages := .Paginator.Pages }}
-  {{ if .Site.Params.showAllPostsArchive }}
+    {{ $pages := .Paginator.Pages }}
+    {{ if .Site.Params.showAllPostsArchive }}
     {{ $pages = .Pages }}
-  {{ end }}
+    {{ end }}
 
-  {{ range (sort $pages "Date" "desc") }}
+    {{ range (sort $pages "Date" "desc") }}
     {{ $pageYear := (.Date.Format "2006") }}
     {{ if (ne $pageYear ($.Scratch.Get "year")) }}
     {{ $.Scratch.Set "year" $pageYear }}
@@ -15,16 +16,17 @@
     {{ end }}
     <li class="post-item">
       <div class="meta">
-        <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
+        <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default
+          "2006-01-02") }}</time>
       </div>
-      <span>    
+      <span>
         <a class="" href="{{ .Permalink }}">{{ if .Title }} {{ .Title }} {{ else }} Untitled {{ end }}</a>
       </span>
     </li>
     {{ end }}
   </ul>
   {{ if eq .Site.Params.showAllPostsArchive false }}
-    {{ partial "pagination.html" . }}
+  {{ partial "pagination.html" . }}
   {{ end }}
 </div>
 {{ end }}
