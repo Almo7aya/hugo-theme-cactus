@@ -1,12 +1,13 @@
 #footer {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   color: $color-meta;
-  vertical-align: top;
   text-align: center;
-  font-size: 11px;
+  background-color: #18191a;
+  padding: 3.5rem 0;
 
   ul {
     margin: 0;
@@ -45,22 +46,23 @@
     vertical-align: middle;
     line-height: 20px;
   }
-}
-@media (min-width: 39rem) {
-  #footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 20px;
 
-    .footer-left {
-      align-self: flex-start;
-      margin-right: 20px;
-    }
-    .footer-right {
-      align-self: flex-end;
-    }
+  #image {
+    display: block;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem 0;
   }
-};
+
+  .link {
+    font-size: .8rem;
+  }
+
+  .license {
+    margin-top: 2rem;
+    font-size: .6rem;
+  }
+}
+

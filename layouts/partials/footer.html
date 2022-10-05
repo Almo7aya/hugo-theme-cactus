@@ -1,14 +1,12 @@
 <footer id="footer">
-  <div class="footer-left">
-    Copyright  &copy; {{ now.Format "2006" }} {{ if .Site.Copyright }} {{ print .Site.Copyright | markdownify }} {{ else }} {{ print .Site.Title }} {{ end }}
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        {{ range .Site.Menus.main }} 
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
+  <img id="image" src="{{ .Site.Params.avatar }}" alt="">
+  <div class="link">Github: <a target="_blank" href="https://github.com/almo7aya">@almo7aya</a></div>
+  <div class="link">Twitter: <a target="_blank" href="https://twitter.com/@almo7aya_">@almo7aya_</a></div>
+  <div class="link">LinkedIn: <a target="_blank" href="https://linkedin.com/in/almo7aya">Ali Almohaya</a></div>
+  <div class="link"><a target="_blank" href="mailto:alialmohaya@gmail.com">alialmohaya@gmail.com</a></div>
+
+  <div class="license">
+    Content licensed under a <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC Attribution 4.0 International
+      License</a>
   </div>
 </footer>

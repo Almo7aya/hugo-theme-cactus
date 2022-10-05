@@ -19,6 +19,7 @@ html {
   border-top: 2px solid $color-text;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-size: $font-size;
 }
 body {
   margin: 0;
@@ -27,7 +28,6 @@ body {
   color: $color-text;
   font-display: swap;
   font-weight: 400;
-  font-size: $font-size;
   font-family: $font-family-body;
   line-height: $line-height;
   text-rendering: geometricPrecision;
@@ -41,8 +41,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 80%;
   overflow-wrap: break-word;
+  padding-bottom: 3rem;
 
   p {
     @include hyphens(auto);
@@ -147,6 +148,7 @@ body {
 @import "partial/tags";
 @import "partial/tooltip";
 @import "partial/categories";
+@import "partial/about";
 
 pre {
   overflow-x: auto;
