@@ -150,9 +150,5 @@ article {
   .article-tag,
   .article-category {
     display: inline;
-
-    &:before {
-      content: "|";
-    }
   }
 };
