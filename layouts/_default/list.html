@@ -1,7 +1,7 @@
 {{ define "main"}}
 <div id="archive">
   <ul class="post-list">
-    <span class="h2"><a href="{{ .Site.Params.mainSection | absURL }}">### All Posts</a></span>
+    <span class="h1"><a href="{{ .Site.Params.mainSection | absURL }}">## All Posts</a></span>
 
     {{ $pages := .Paginator.Pages }}
     {{ if .Site.Params.showAllPostsArchive }}

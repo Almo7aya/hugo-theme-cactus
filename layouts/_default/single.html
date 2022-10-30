@@ -1,12 +1,8 @@
-{{ define "main" }}
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-<!-- TODO: gallery -->
-  <div class="content" itemprop="articleBody">
-  {{ if (eq .Type "search") }}
-    <!-- TODO: search https://gohugo.io/tools/search/ -->
-  {{ else }}
+{{ define "main"}}
+<div id="archive">
+  <ul class="post-list">
+    <span class="h1"><a href="{{ .Permalink }}">## {{ .Title }}</a></span>
     {{ .Content }}
-  {{ end }}
-  </div>
-</article>
+</div>
 {{ end }}
+
