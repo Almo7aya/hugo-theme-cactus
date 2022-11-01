@@ -12,6 +12,10 @@
       min-width: 100px;
       color: $color-meta;
       font-size: 1rem;
+
+      time {
+        white-space: nowrap;
+      }
     }
   }
 }
@@ -51,3 +55,9 @@
     }
   }
 }
+
+.reading-description {
+  font-size: .85rem;
+  color: #949494;
+}
+
