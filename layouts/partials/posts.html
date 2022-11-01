@@ -20,6 +20,9 @@
       </div>
       <span>
         <a class="" href="{{ .Permalink }}">{{ if .Title }} {{ .Title }} {{ else }} Untitled {{ end }}</a>
+        <div class="reading-description">
+          {{ .Description }}
+        </div>
       </span>
     </li>
     {{ end }}
@@ -28,4 +31,3 @@
   {{ partial "pagination.html" . }}
   {{ end }}
 </div>
-
